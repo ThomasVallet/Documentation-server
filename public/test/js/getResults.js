@@ -146,7 +146,7 @@ function onSearchSnippetClick(searchType) {
     xmlHttp.send(JSON.stringify({
         "search": document.getElementById(searchType).value,
         "page": 0,
-        "pageSize": 10,
+        "pageSize": 1000000,
         "includePayload": false
     }));
 }
